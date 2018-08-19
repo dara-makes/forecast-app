@@ -1,0 +1,90 @@
+@import "../app/mixin";
+
+.card {
+  display: grid;
+  text-align: center;
+  padding-top: 4em;
+  opacity: 0.7;
+  transition: all 300ms;
+
+  .wi {
+    font-size: 12vw;
+  }
+
+  &-temp {
+    font-size: 8vw;
+    font-weight: 700;
+    margin-top: 1em;
+
+    &-low {
+      font-size: .75em;
+      opacity: .5;
+      margin-left: .25em;
+    }
+  }
+
+  &-day {
+    font-size: 7vw;
+    font-weight: 100;
+  }
+
+  &-text {
+    font-size: 5vw;
+    font-weight: 100;
+    margin-top: .15em;
+  }
+
+  &:first-child{
+    .wi {
+      font-size: 25vw;
+    }
+    .card-day {
+      font-size: 12vw;
+    }
+  }
+
+  @include breakpoint(small) {
+    .wi {
+      font-size: 2em;
+    }
+
+    &-temp {
+      font-size: 1.5em;
+      margin-top: 1.5em;
+    }
+
+    &-day {
+      font-size: 1.25em;
+    }
+
+    &-text {
+      font-size: 1em;
+    }
+
+    &:first-child {
+      grid-column: span 2;
+      .wi {
+        font-size: 3em;
+        transform: scale(2) translateY(-.25em);
+      }
+      .card-day {
+        font-size: 2em;
+      }
+      .card-text {
+        font-size: 1.25em;
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    &:first-child {
+      grid-column: span 4;
+    }
+  }
+
+  @include breakpoint(large) {
+    &:first-child {
+      grid-column: span 1;
+    }
+  }
+}

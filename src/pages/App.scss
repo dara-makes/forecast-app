@@ -1,0 +1,70 @@
+@import "../app/mixin";
+@import "../app/var";
+
+@each $color, $code in $colorList {
+  .color-#{$color} {
+    background-color: #{$code};
+  }
+}
+
+.app-container {
+  color: #fff;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transition: background-color 500ms ease-out;
+
+  @include breakpoint(small) {
+    height: 100vh;
+  }
+}
+
+.nav {
+  &-container {
+    position: absolute;
+    height: 100vh;
+    width: 20em;
+    max-width: 20em;
+    left: -20em;
+    background-color: #fff;
+    opacity: 0.8;
+    padding: 0 3em 0 1em;
+    z-index: 2;
+    transition: all 450ms ease-out;
+
+    &.open {
+      transform: translateX(20em);
+    }
+  }
+
+  &-icon {
+    &-open {
+      position: absolute;
+      top: .25em;
+      left: .5em;
+      cursor: pointer;
+      font-size: 2.5em;
+      font-weight: 900;
+      color: white;
+      opacity: 0.8;
+    }
+
+    &-close {
+      position: absolute;
+      top: 0;
+      right: .25em;
+      transform: rotate(45deg);
+      cursor: pointer;
+      font-size: 2.5em;
+      font-weight: 700;
+      opacity: .4;
+    }
+  }
+}
+
+.search-box {
+  font-style: italic;
+  border-bottom: 1px solid #be4334;
+  padding-bottom: .25em;
+}

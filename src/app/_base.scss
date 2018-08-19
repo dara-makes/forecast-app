@@ -1,0 +1,29 @@
+html,
+body,
+ul,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+/**
+ * Inherit border-box on all elements in the universe and before and after
+ */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}

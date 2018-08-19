@@ -1,0 +1,7 @@
+.tile-grid {
+  display: grid;
+  height: 7em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  width: 70%;
+}
