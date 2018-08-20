@@ -18,11 +18,11 @@
         "transform-es2015-arrow-functions"
     ],
     "env": {
-        "test": {
-            "plugins": ["transform-es2015-modules-commonjs"]
-        },
-        "build": {
-            "plugins": ["transform-es2015-modules-commonjs"]
-        }
+      "test": {
+        "plugins": ["transform-es2015-modules-commonjs"]
+      },
+      "build": {
+        "plugins": ["transform-es2015-modules-commonjs"]
+      }
     }
 }

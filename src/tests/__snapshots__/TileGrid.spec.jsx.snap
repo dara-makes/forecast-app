@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TileGrid should render tile grid 1`] = `
+<div
+  className="tile-grid"
+>
+  <Tile
+    colorMapping="color-coral"
+    key="0"
+  />
+  <Tile
+    colorMapping="color-ultramarine"
+    key="1"
+  />
+  <Tile
+    colorMapping="color-deepblue"
+    key="2"
+  />
+  <Tile
+    colorMapping="color-mustard"
+    key="3"
+  />
+  <Tile
+    colorMapping="color-ash"
+    key="4"
+  />
+  <Tile
+    colorMapping="color-peach"
+    key="5"
+  />
+  <Tile
+    colorMapping="color-wine"
+    key="6"
+  />
+  <Tile
+    colorMapping="color-moss"
+    key="7"
+  />
+  <Tile
+    colorMapping="color-mint"
+    key="8"
+  />
+</div>
+`;

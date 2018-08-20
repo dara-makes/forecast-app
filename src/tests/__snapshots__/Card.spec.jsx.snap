@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render card 1`] = `
+<li
+  className="card"
+>
+  <i
+    className="wi wi-yahoo-undefined"
+  />
+  <h1
+    className="card-temp"
+  >
+    °
+    <span
+      className="card-temp-low"
+    />
+  </h1>
+  <h2
+    className="card-day"
+  >
+    Now
+  </h2>
+  <p
+    className="card-text"
+  />
+</li>
+`;
